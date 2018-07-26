@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Lesson7" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Lesson7" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-w" />
+					<Add option="-g" />
+					<Add directory="/home/pi/stb" />
+					<Add directory="Headers" />
+					<Add directory="/opt/vc/include" />
+					<Add directory="/opt/vc/include/interface/vcos/pthreads" />
+					<Add directory="/opt/vc/include/interface/vmcs_host/linux" />
+					<Add directory="/opt/vc/include/interface" />
+				</Compiler>
+				<Linker>
+					<Add library="GLESv2_static" />
+					<Add library="EGL_static" />
+					<Add library="pthread" />
+					<Add library="vchiq_arm" />
+					<Add library="khrn_static" />
+					<Add library="vcos" />
+					<Add library="bcm_host" />
+					<Add directory="/opt/vc/lib" />
+					<Add directory="/usr/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Lesson7" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Assets/brianJumpL.png" />
+		<Unit filename="Assets/brianJumpR.png" />
+		<Unit filename="Assets/brianWalkL_1.png" />
+		<Unit filename="Assets/brianWalkL_2.png" />
+		<Unit filename="Assets/brianWalkL_3.png" />
+		<Unit filename="Assets/brianWalkL_4.png" />
+		<Unit filename="Assets/brianWalkR_1.png" />
+		<Unit filename="Assets/brianWalkR_2.png" />
+		<Unit filename="Assets/brianWalkR_3.png" />
+		<Unit filename="Assets/brianWalkR_4.png" />
+		<Unit filename="Assets/brianclimb_1.png" />
+		<Unit filename="Assets/brianclimb_2.png" />
+		<Unit filename="Assets/brianclimb_3.png" />
+		<Unit filename="Assets/brianclimb_4.png" />
+		<Unit filename="Assets/fungus_2.png" />
+		<Unit filename="Assets/fungus_3.png" />
+		<Unit filename="Assets/fungus_4.png" />
+		<Unit filename="Assets/tileset.png" />
+		<Unit filename="Headers/Bob.h" />
+		<Unit filename="Headers/Game.h" />
+		<Unit filename="Headers/Input.h" />
+		<Unit filename="Headers/OGL.h" />
+		<Unit filename="Headers/SimpleObj.h" />
+		<Unit filename="Source/Bob.cpp" />
+		<Unit filename="Source/Game.cpp" />
+		<Unit filename="Source/Input.cpp" />
+		<Unit filename="Source/MagPiHelloTriangle.cpp" />
+		<Unit filename="Source/OGL.cpp" />
+		<Unit filename="Source/SimpleObj.cpp" />
+		<Unit filename="images/ball.png" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
